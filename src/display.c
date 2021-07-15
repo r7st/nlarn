@@ -344,7 +344,7 @@ void display_paint_screen(player *p)
                 else
                 {
                     /* draw tile */
-                    aaddch(DARKGRAY, mt_get_glyph(player_memory_of(p, pos).type));
+                    aaddch(BROWN, mt_get_glyph(player_memory_of(p, pos).type));
                 }
             }
 
@@ -669,8 +669,8 @@ void display_paint_screen(player *p)
     {
         /* default colour for the line */
         int def_attrs = (i == 0 && ttime[i] > game_turn(nlarn) - 5)
-            ? WHITE
-            : DARKGRAY;
+            ? LIGHTGREEN
+            : GREEN;
 
         /* reset current color when switching log entries */
         if (i > 0 && ttime[i - 1] != ttime[i])
