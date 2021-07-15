@@ -1,3 +1,10 @@
+## Notes on this fork
+This is Nlarn 0.7.6 with the following changes: 
+Merged nlarn#299 for compilation issues (and Changelog update). 
+Included unistd.h in game.c to build on FreeBSD. 
+Changed memory tile and message colors - could not get them to display properly otherwise. 
+There were NO gameplay changes.
+
 Welcome to NLarn!
 =================
 
